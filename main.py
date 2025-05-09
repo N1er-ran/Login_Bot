@@ -151,7 +151,7 @@ class LoginButton(Button):
         embed.set_footer(text=f"ユーザーID: {user_data['ユーザーID']}")
 
         # ユーザーのアバターをサムネイルとして設定
-        embed.set_thumbnail(url=interaction.user.avatar.url)
+        # embed.set_thumbnail(url=interaction.user.avatar.url)
 
         # ログイン成功メッセージとユーザー情報を一緒に送信
         await interaction.response.send_message(f"{login_message}", ephemeral=True)
